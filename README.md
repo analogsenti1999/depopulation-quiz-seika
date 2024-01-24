@@ -1,1 +1,1 @@
-# depopulation-quiz-seika
+授業で作成したクイズです
