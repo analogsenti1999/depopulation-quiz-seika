@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <div class = "header">
-      <div class = "header-logo">Progate</div>
-      <div class  = "header-list">
-        <ul>
-          <li>プログラミングとは</li>
-          <li>学べるレッスン</li>
-          <li>お問い合わせ</li>
-        </ul>
-      </div>
+<head>
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/script.js"></script>
+</head>
+<body>
+<div class="quizzes-container">
+  <h1>クイズ  </h1>
+  <div class="quiz-container">
+    <h2>第1問</h2>
+    <div>
+      <p>枕草子の作者はだれ？</p>
     </div>
-    <div class = "main">
-      <div class = "copy-container">
-        <h1>HELLO WORLD<span>.</span></h1>
-        <h2>プログラミングの世界へようこそ</h2>
-      </div>
-      <div class = "contents">
-        <h3 class = "contents-title">学べるレッスン</h3>
-        <div class = "contents-item">
-          <img src="https://prog-8.com/shared/images/lesson/html/study/html.svg" />
-          <p>HTML & CSS</p>
-        </div>
-        <div class = "contents-item">
-          <img src="https://prog-8.com/shared/images/lesson/html/study/php.svg" />
-          <p>PHP</p>
-        </div>
-        <div class = "contents-item">
-          <img src="https://prog-8.com/shared/images/lesson/html/study/ruby.svg" />
-          <p>Ruby</p>
-        </div>
-        <div class = "contents-item">
-          <img src="https://prog-8.com/shared/images/lesson/html/study/swift.svg" />
-          <p>HTML & CSS</p>
-        </div>
-      </div>
+    <form id="quiz-1">
+      <input name="answer" type="radio" value="a">紫式部</input>
+      <input name="answer" type="radio" value="b">清少納言</input>
+      <input name="answer" type="radio" value="c">小野小町</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz1();">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第2問</h2>
+    <div>
+      <p>国旗に5つの星がある国は？</p>
     </div>
-  </body>
-</html>
+    <form id="quiz-2">
+      <input name="answer" type="radio" value="a">中国</input>
+      <input  name="answer" type="radio" value="b">ニュージーランド</input>
+      <input name="answer" type="radio" value="c">オーストラリア</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz2();">回答する</button>
+  </div>
+  <div class="quiz-container">
+    <h2>第3問</h2>
+    <div>
+      <p>世界で一番長い川は？</p>
+    </div>
+    <form id="quiz-3">
+      <input name="answer" type="radio" value="a">アマゾン</input>
+      <input name="answer" type="radio" value="b">ミシシッピ</input>
+      <input name="answer" type="radio" value="c">ナイル</input>
+    </form>
+    <button class="btn" type="button" onclick="answerQuiz3();">回答する</button>  
+  </div>
+  <div id="score-container">
+    <p id="score-message"></p>
+  </div>
+  <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+</div>
+</body>
