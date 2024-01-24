@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
-  <title>地域過疎クイズ</title>
-　　 <meta charset="utf-8">
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
 </head>
 <body>
 <div class="quizzes-container">
@@ -49,6 +47,18 @@
     <p id="score-message"></p>
   </div>
   <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
-  <button class="btn-score" type="button" onclick="showScore();">解説を見る</button>
+  <script language="Javascript">
+    function Click_Sub() {
+      if (document.all.div1.style.display == "none") {
+        document.all.div1.style.display = "block"
+      } else {
+        document.all.div1.style.display = "none"
+      }
+    }
+    </script>
+    
+    <input type="button" value="クリック" onclick="Click_Sub()">
+    <div id="div1">表示・非表示</div>
 </div>
+
 </body>
