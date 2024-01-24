@@ -4,7 +4,7 @@ function showScore(){
   const totalScore = document.getElementById('score-message');
     
   if(score === 3) {
-    totalScore.innerHTML = score + "点：満点！おめでとう！GitHubを用いてWebページを公開する方法はこれで以上です。もし、お気に入りのオリジナルWebページを作成して公開できたら、是非Twitterやご意見箱からご報告ください！Progate一同、皆さんから嬉しい報告が届くのを楽しみにしています！"
+    totalScore.innerHTML = score + "点：満点！おめでとう！"
   } else if(score === 2) {
     totalScore.innerHTML = score + "点：あともう一息！";
   } else if(score === 1) {
@@ -19,6 +19,10 @@ function showScore(){
 2問目の正解はAの中国
 3問目の正解はCのナイル
 **/
+
+function showExplanation(){
+  
+}
 
 const correct = '正解です';
 const incorrect = '不正解です';
@@ -85,3 +89,7 @@ function answerQuiz3(){
   }
   console.log('現在の点数：' + score); 
 }
+
+
+
+
